@@ -1,5 +1,5 @@
 # Web Project Workflows with GulpJS 
-Gulp.js, SASS-COMPASS, Livereload, Browserify, jsValidate, gulp-minify-html, gulp-uglify 
+Gulp.js, SASS-COMPASS, Livereload, jsValidate, gulp-minify-html, gulp-uglify, Bootstrap 4
 
 
 ## Installing

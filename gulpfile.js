@@ -15,13 +15,12 @@ var outputBuilds,
     sassSources,
     jsSrc;
 
+// status 
 //env = 'production';
 env = 'development';
 
 if (env==='development') {
-  //outputDir = 'builds/development/';
    outputBuilds = 'builds/development/';
-  //sassStyle = 'expanded';
   sassOutputStyle = 'expanded';
 
 } else {
@@ -29,6 +28,7 @@ if (env==='development') {
   sassOutputStyle = 'compressed';
 }
 
+// javasctipt files
 jsSrc = [
   'components/scripts/jquery.slim.min.js',
   'components/scripts/popper.js',
@@ -36,10 +36,10 @@ jsSrc = [
   'components/scripts/script.js'
 ];
 
-
+// main sass file
 sassSources = ['components/sass/style.scss'];
 
-
+// concat all js in one file - script.js
 gulp.task('js', function() {
   gulp.src(jsSrc)
 
@@ -51,13 +51,14 @@ gulp.task('js', function() {
     .pipe(connect.reload())
 });
 
-
+//checking javascript error
 gulp.task('javascript', function () {
   console.log("Validate JavaScript");
   return gulp.src("components/scripts/**.js")
     .pipe(jsValidate());
 });
 
+//sass compiler. convert scss to css
 gulp.task('compass', function() {
   gulp.src(sassSources)
     .pipe(compass({
@@ -70,6 +71,7 @@ gulp.task('compass', function() {
     .pipe(connect.reload())
 });
 
+// watcher
 gulp.task('watch', function() {
     gulp.watch(['components/sass/*.scss', 'components/sass/*/*.scss'], ['compass']);    
     gulp.watch(jsSrc, ['js']);
@@ -77,6 +79,7 @@ gulp.task('watch', function() {
     gulp.watch([outputBuilds + '/**/*.html'], ['html']);
 });
 
+// http://localhost:3000/ 
 gulp.task('webserver', function() {
     gulp.src(outputBuilds + '/')
         .pipe(webserver({

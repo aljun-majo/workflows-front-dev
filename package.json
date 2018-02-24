@@ -1,0 +1,29 @@
+{
+  "name": "workflows-front-dev",
+  "version": "0.0.1",
+  "description": "workflow for front-end development, sass-compass, bootstrap 4.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jun20/workflows-front-dev"
+  },
+  "author": "aljun",
+  "devDependencies": {
+    "gulp": "^3.8.8",
+    "gulp-browserify": "^0.5.1",
+    "gulp-compass": "^2.1.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-connect": "^5.4.0",
+    "gulp-html-validator": "0.0.5",
+    "gulp-if": "^2.0.2",
+    "gulp-jshint": "^2.1.0",
+    "gulp-jshint-classic": "^1.5.1",
+    "gulp-jsvalidate": "^4.0.0",
+    "gulp-minify-html": "^1.0.6",
+    "gulp-uglify": "^3.0.0",
+    "gulp-util": "^3.0.8",
+    "gulp-webserver": "^0.8.8",
+    "jquery": "^3.3.1",
+    "jshint-stylish": "^2.2.1"
+  },
+  "dependencies": {}
+}

@@ -1,0 +1,23 @@
+// Custom.scss
+// Option A: Include all of Bootstrap
+
+@import "bootstrap-4.0.0/scss/bootstrap";
+
+//my custom style
+@import "custom-style/index";
+
+
+// Custom.scss
+// Option B: Include parts of Bootstrap
+
+// Required
+//@import "bootstrap-4.0.0/scss/functions";
+//@import "bootstrap-4.0.0/scss/variables";
+//@import "bootstrap-4.0.0/scss/mixins";
+
+// Optional
+//@import "bootstrap-4.0.0/scss/reboot";
+//@import "bootstrap-4.0.0/scss/type";
+//@import "bootstrap-4.0.0/scss/images";
+//@import "bootstrap-4.0.0/scss/code";
+//@import "bootstrap-4.0.0/scss/grid";

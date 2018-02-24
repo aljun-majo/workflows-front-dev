@@ -1,0 +1,9 @@
+.DS_Store
+node_modules
+.tmp
+images/**
+slides/**
+builds/**/images/*
+.tmp
+.sass-cache
+bower_components

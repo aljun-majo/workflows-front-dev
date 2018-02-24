@@ -1,6 +1,6 @@
 $(function() {
 
-   var topoffset = 888888; //variable for scrolling effects
-   console.log(topoffset); 
+   const test = 888888; //test
+   console.log(test); 
 
   }); //function
